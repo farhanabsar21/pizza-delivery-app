@@ -1,0 +1,40 @@
+/* header section */
+  .header-content{
+    height: 500px;
+  }
+
+  .header-content h1{
+    font-size: 65px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .header-content h1 .delivery{
+    color: #ffbf00;
+  }
+  .header-content .lead{
+    color: #666;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .header-content img{
+    height: 600px;
+    margin-top: 27px;
+  }
+  
+  .header-content button{
+    outline: none;
+    border: 2px solid #ffbf00;
+    padding: 10px 40px;
+    border-radius: 40px;
+    font-weight: bold;
+    color: #fff;
+    background: #ffbf00;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  .header-content button:hover{
+    background: #fff9e6;
+    color: #ffbf00;
+  }
+  
+  

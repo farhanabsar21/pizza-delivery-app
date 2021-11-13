@@ -1,0 +1,27 @@
+nav .navbar-brand img{
+    height: 80px;
+  }
+  nav .nav-item a{
+    color: #000;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+  
+  nav .nav-item a:hover{
+    color: #ffbf00;
+  }
+  
+  nav .cart-count{
+    width: 24px;
+    height: 24px;
+    background: #ffbf00;
+    position: absolute;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 16px;
+    top: 0;
+    right: -10px;
+    text-align: center;
+    line-height: 24px;
+  }

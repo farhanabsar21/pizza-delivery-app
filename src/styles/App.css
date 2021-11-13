@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+/* header section*/
+.header-section{
+  width: 100%;
+  height: 750px;
+  background-image: linear-gradient(45deg,#fff9e6, #fff3cc);
+}
+.custom-container{
+  width: 80%;
+  margin: 0 auto;
+}
+/* about section*/
+.about-section{
+  height: 700px;
+  background-image: url("../img/about-pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-menu-section{
+  height: auto;
+  background: rgba(255, 249, 230, 1);
+}
