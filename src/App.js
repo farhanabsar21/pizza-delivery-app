@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home';
 import Cart from './Components/Cart';
+import Registration from './Components/Auth/Registration';
+import Login from './Components/Auth/Login';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/cart" element={<Cart/>}/>
+          <Route path="/registration" element={<Registration/>}/>
+          <Route path="/login" element={<Login/>}/>
           <Route path="/" exact element={<Home/>} />
         </Routes>
       </BrowserRouter>

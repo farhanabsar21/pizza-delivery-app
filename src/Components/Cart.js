@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
 import "../styles/Cart.css";
 import { useSelector } from 'react-redux';

@@ -25,3 +25,10 @@ nav .navbar-brand img{
     text-align: center;
     line-height: 24px;
   }
+  nav .person-details{
+    text-transform: capitalize;
+  }
+
+  .dropdown-item:hover{
+    background: none;
+  }

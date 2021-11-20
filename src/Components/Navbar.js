@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const cartState = useSelector(state => state.cartReducer)
+    const userState = useSelector(state => state.loginUserReducer)
+    const {currentUser} = userState
     return (
         <nav className="navbar navbar-expand-lg pt-4">
             <div className="container-fluid">
@@ -17,9 +19,17 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
+                        {currentUser ?
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle person-details" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{currentUser.username}</Link>
+                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><Link class="dropdown-item" to="#">Orders</Link></li>
+                                <li><Link class="dropdown-item" to="#">Logout</Link></li>
+                            </ul>
+                        </li> :
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/"><FontAwesomeIcon icon={faUser} /></a>
-                        </li>
+                            <Link className="nav-link" aria-current="page" to="/login"><FontAwesomeIcon icon={faUser} /></Link>
+                        </li>}
                         <li className="nav-item">
                             <Link className="nav-link position-relative" to="/cart"><FontAwesomeIcon icon={faShoppingBag} />
                                 <p className="cart-count">{cartState.cartItems.length}</p>
